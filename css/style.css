@@ -1,0 +1,59 @@
+/***************** VARIABLES ****************/
+/* fuente */
+/* colores */
+/* imagenes */
+/* media queries */
+/* otros */
+/****************** MIXINS ***********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.contenedor {
+  max-width: 1100px;
+  margin: 0 auto; }
+
+header {
+  display: flex;
+  color: #ffffff; }
+  header .contenido {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    min-height: 24rem;
+    background-size: cover;
+    background-position: center center; }
+    @media screen and (min-width: 762px) {
+      header .contenido {
+        align-items: flex-start; } }
+    @media screen and (min-width: 1024px) {
+      header .contenido {
+        align-items: flex-end; } }
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  align-items: center;
+  padding: 1rem; }
+  @media screen and (min-width: 762px) {
+    .menu {
+      flex-direction: row;
+      justify-content: space-between; } }
+  .menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media screen and (min-width: 762px) {
+      .menu li ul {
+        display: none; } }
+    .menu li a {
+      color: white;
+      text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */
