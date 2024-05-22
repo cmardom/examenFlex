@@ -12,3 +12,12 @@
     }
 }
 
+@mixin boton ($fondo, $letra){
+    background-color: $fondo;
+    color: $letra;
+    box-shadow: $sombra;
+    padding: 0.5rem;
+    font-family: $fuenteBoton;
+    margin-bottom: 0.5rem;
+}
+
