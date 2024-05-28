@@ -72,54 +72,86 @@ nav {
         color: white;
         text-decoration: none; }
 
-.principal img {
-  width: 100%; }
-.principal .mainYaside {
+.principal {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 1rem; }
-  @media screen and (min-width: 762px) {
-    .principal .mainYaside {
-      flex-direction: row; } }
-  .principal .mainYaside main {
+  .principal .boton2 {
+    background-color: #536DFE;
+    color: "Oswald", sans-serif;
+    box-shadow: 5px 5px 5px gray;
+    padding: 0.5rem;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 0.5rem; }
+  .principal img {
+    width: 100%; }
+  .principal .mainYaside {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    gap: 0.5rem; }
+    flex-direction: column-reverse;
+    gap: 1rem; }
     @media screen and (min-width: 762px) {
-      .principal .mainYaside main {
-        flex-grow: 1;
+      .principal .mainYaside {
         flex-direction: row; } }
-    .principal .mainYaside main article {
-      background-color: #f2f2f2;
-      box-shadow: 5px 5px 5px gray;
+    .principal .mainYaside main {
       display: flex;
       flex-direction: column;
+      flex-wrap: wrap;
       justify-content: space-around;
-      align-items: center;
-      gap: 1rem; }
+      align-items: flex-start;
+      gap: 0.5rem; }
       @media screen and (min-width: 762px) {
-        .principal .mainYaside main article {
-          flex-basis: calc(100% / 2 - 2*0.5rem); } }
-      @media screen and (min-width: 1024px) {
-        .principal .mainYaside main article {
-          flex-basis: calc(100% / 3 - 0.5rem); } }
-      .principal .mainYaside main article a {
-        background-color: #455A64;
-        color: white;
+        .principal .mainYaside main {
+          flex-grow: 1;
+          flex-direction: row; } }
+      .principal .mainYaside main article {
+        background-color: #f2f2f2;
         box-shadow: 5px 5px 5px gray;
-        padding: 0.5rem;
-        font-family: "Oswald", sans-serif;
-        margin-bottom: 0.5rem; }
-  .principal .mainYaside aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem; }
+        @media screen and (min-width: 762px) {
+          .principal .mainYaside main article {
+            flex-basis: calc(100% / 2 - 2*0.5rem); } }
+        @media screen and (min-width: 1024px) {
+          .principal .mainYaside main article {
+            flex-basis: calc(100% / 3 - 0.5rem); } }
+        .principal .mainYaside main article a {
+          background-color: #455A64;
+          color: white;
+          box-shadow: 5px 5px 5px gray;
+          padding: 0.5rem;
+          font-family: "Oswald", sans-serif;
+          margin-bottom: 0.5rem; }
+    .principal .mainYaside aside {
+      display: flex;
+      flex-direction: column;
+      background-color: #f2f2f2;
+      box-shadow: 5px 5px 5px gray; }
+      .principal .mainYaside aside a {
+        color: black;
+        text-decoration: none; }
+
+footer {
+  background-image: url("/img/contacto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff; }
+  footer .footer {
     display: flex;
     flex-direction: column;
-    background-color: #f2f2f2;
-    box-shadow: 5px 5px 5px gray; }
-    .principal .mainYaside aside a {
-      color: black;
-      text-decoration: none; }
+    justify-content: space-around; }
+    @media screen and (min-width: 762px) {
+      footer .footer {
+        flex-direction: row; } }
+    @media screen and (min-width: 1024px) {
+      footer .footer {
+        justify-content: flex-start; } }
+  @media screen and (min-width: 762px) {
+    footer .widget {
+      flex-basis: 25%; } }
 
 /*# sourceMappingURL=style.css.map */
